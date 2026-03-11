@@ -16,7 +16,7 @@ from colorama import Fore, Style, init
 init(autoreset=True)
 
 # ---------------- 1. AYARLAR ----------------
-API_KEY = "AIzaSyByKhwcyQEYIdLoNFB4hiwdzF0MhUngzGk" "buraya kendi apiniz lazım"
+API_KEY = "" "buraya kendi apiniz lazım"
 genai.configure(api_key=API_KEY)
 
 MODEL_PATH = "model" 
@@ -172,4 +172,5 @@ async def main():
 
 if __name__ == "__main__":
     try: asyncio.run(main())
+
     except KeyboardInterrupt: pass
